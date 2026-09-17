@@ -1,9 +1,25 @@
-Herramienta usada: GitHub Copilot.
+"ayudame a generar los commits, me tira path not found"
 
-Uso declarado: se solicito asistencia para generar y adaptar la interfaz HTML y CSS de Tienda Pixel siguiendo ejemplos visuales proporcionados.
+"calcula además el precio con descuento del 20% (redondeado a entero) y una etiqueta decidida con
+if / elif / else a partir de multijugador y oferta : "Para jugar en grupo" si es multijugador y no está en
+oferta, "En oferta" si está en oferta, "Aventura individual" --no recordaba.
 
-Archivos de interfaz generados o modificados con asistencia: templates/base.html, templates/juegos/inicio.html, templates/juegos/detalle.html y static/css/estilos.css.
+"para generar el HTML y el CSS de la interfaz utiliza estos ejemplos" enviadas imagenes de profesor.
 
-Imagen: se incorporo static/img/gato.jpg en templates/base.html mediante la etiqueta {% static %}.
+"css/estilos.css con estilos propios visibles (fondo, tarjetas o lista, botón o enlace destacado)."
 
-Cambios posteriores: se revisaron los textos, la estructura visual, los estilos responsive y la ruta de la imagen. El codigo Python de views.py, urls.py y settings.py fue escrito y revisado para cumplir la pauta.
+"Una imagen (logo, ícono o foto) cargada con {% static %} . añade esta imagen gato.jpg"
+
+"ordename el commit porque los hice sin orden"
+
+"README.md debe explicar cómo ejecutarlo (crear el
+entorno, instalar requirements.txt , migrate , runserver )."
+
+
+"https://github.com/yamir-rojo/prueba-backend.git ese es mi git
+
+revisa qué me falta"
+
+"sube el ultimo commit"
+
+"haz otro commit solo corriguiendo el ia.txt que se llame "fix ia.txt""
