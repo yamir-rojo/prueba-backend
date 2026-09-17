@@ -16,7 +16,7 @@
         <div class="game-summary">
             <span>${{ p.precio }} - {{ p.horas }} horas</span>
             {% if p.horas >= 20 %}
-            <span class="campaign-badge">Campana larga</span>
+            <span class="campaign-badge">Campaña larga</span>
             {% endif %}
         </div>
         <a class="button" href="{% url 'juegos:detalle' p.id %}">Ver detalles</a>

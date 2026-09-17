@@ -1,0 +1,9 @@
+Herramienta usada: GitHub Copilot.
+
+Uso declarado: se solicito asistencia para generar y adaptar la interfaz HTML y CSS de Tienda Pixel siguiendo ejemplos visuales proporcionados.
+
+Archivos de interfaz generados o modificados con asistencia: templates/base.html, templates/juegos/inicio.html, templates/juegos/detalle.html y static/css/estilos.css.
+
+Imagen: se incorporo static/img/gato.jpg en templates/base.html mediante la etiqueta {% static %}.
+
+Cambios posteriores: se revisaron los textos, la estructura visual, los estilos responsive y la ruta de la imagen. El codigo Python de views.py, urls.py y settings.py fue escrito y revisado para cumplir la pauta.

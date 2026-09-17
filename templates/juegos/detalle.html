@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block titulo %}{{ juego.titulo }} | Tienda Pixel{% endblock %}
+
+{% block contenido %}
+<a class="back-link" href="{% url 'juegos:inicio' %}">&larr; Volver al inicio</a>
+<section class="detail-card">
+    <p class="platform">{{ juego.plataforma|upper }}</p>
+    <h1>{{ juego.titulo }}</h1>
+    <p class="status-badge">{{ etiqueta }}</p>
+    <dl class="detail-data">
+        <div><dt>Precio</dt><dd>${{ juego.precio }}</dd></div>
+        <div><dt>Con descuento (20%)</dt><dd>${{ precio_descuento }}</dd></div>
+        <div><dt>Duracion de la campana</dt><dd>{{ juego.horas }} horas</dd></div>
+        <div><dt>Multijugador</dt><dd>{{ juego.multijugador|yesno:"Si,No" }}</dd></div>
+        <div><dt>En oferta</dt><dd>{{ juego.oferta|yesno:"Si,No" }}</dd></div>
+    </dl>
+    <h2>Descripcion</h2>
+    <p class="detail-description">{{ juego.descripcion }}</p>
+</section>
+{% endblock %}
