@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block titulo %}Inicio | Tienda Pixel{% endblock %}
+
+{% block contenido %}
+<section class="catalog-header">
+    <h1>Tienda Pixel</h1>
+    <p>{{ juegos|length }} juegos, {{ juegos_en_oferta }} en oferta, precio promedio ${{ precio_promedio }}</p>
+</section>
+
+<section class="game-grid">
+    {% for p in juegos %}
+    <article class="game-card">
+        <p class="platform">{{ p.plataforma|upper }}</p>
+        <h2>{{ p.titulo }}</h2>
+        <div class="game-summary">
+            <span>${{ p.precio }} - {{ p.horas }} horas</span>
+            {% if p.horas >= 20 %}
+            <span class="campaign-badge">Campana larga</span>
+            {% endif %}
+        </div>
+        <a class="button" href="{% url 'juegos:detalle' p.id %}">Ver detalles</a>
+    </article>
+    {% empty %}
+    <p class="empty-state">No hay juegos disponibles.</p>
+    {% endfor %}
+</section>
+{% endblock %}

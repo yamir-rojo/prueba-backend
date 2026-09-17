@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block titulo %}Tienda Pixel{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="{% url 'juegos:inicio' %}">
+                <img src="{% static 'img/logo.svg' %}" alt="Logo de Tienda Pixel">
+                <span>Tienda Pixel</span>
+            </a>
+            <a class="home-link" href="{% url 'juegos:inicio' %}">Inicio</a>
+        </div>
+    </header>
+    <main class="page-shell">
+        {% block contenido %}{% endblock %}
+    </main>
+    <footer class="site-footer">TI3041 Programacion Back End - INACAP 2026</footer>
+</body>
+</html>
